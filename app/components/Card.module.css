@@ -1,0 +1,49 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    background-color: #ffffff;
+  }
+  
+  .content {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .bullets {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .bullet {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .bullet::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    margin-top: 2px;
+    width: 18px;
+    height: 18px;
+    background-image: url('/assets/BW-bullet-arrow.svg'); /* Custom bullet */
+    background-size: cover;
+  }
+  
+  .button {
+    background-image: url('/assets/More-detail-Colour.svg'); /* Custom button */
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    width: 85px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
