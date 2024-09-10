@@ -8,8 +8,36 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
     background-color: #ffffff;
+    width: 500px; /* Specify width */
+    height: 200px; /* Specify height */
+    opacity: 1;
+  }
+
+  .invisiCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    width: 500px; /* Specify width */
+    height: 200px; /* Specify height */
+    opacity: 1;
+    /* below for debugging */
+    /* background-color: #000000; */
+  }
+
+  /* Overwrite h1 and h2 styles inside .invisiCard */
+.invisiCard h3 {
+    color: #fff; 
+    font-size: 60px; 
   }
   
+  .invisiCard p {
+    color: #fff; 
+    font-size: 20px; 
+  }
+
   .content {
     flex: 1;
     margin-right: 20px;
@@ -47,3 +75,5 @@
     cursor: pointer;
   }
   
+
+      
