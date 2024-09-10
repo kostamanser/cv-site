@@ -32,8 +32,8 @@ body {
 
 body {
   margin: 0;
-  height: 100vh;
-  background: linear-gradient(135deg, #4805A8, #6500FB); /* Gradient background */
+  height: 100%;
+  background: linear-gradient(135deg, #4805A8, #009ffb); /* Gradient background */
   background-size: cover;
   position: relative;
 }

@@ -10,7 +10,7 @@ const variants = {
     visible: (i) => ({
       opacity: 1,
       transition: {
-        delay: i * 0.2, // Stagger animation delay
+        delay: i * 0.4, // Stagger animation delay
         duration: 1.2,
       },
     }),
@@ -18,12 +18,15 @@ const variants = {
   };
 
 export default function HomePage() {
-  const addressee = 'there'; // You can still use the value directly in the component
+  const addressee = 'there'; // CHANGE NAME OF ADDRESSEE
 
   const exampleCards = [
     {
       title: 'Hi!',
-      summary: 'If you\'ve got 5 minutes to spare, below is my version of a CV and cover letter. It briefly covers my skils and mindsets and touches on me as a person. WORK IN PROGRESS.',
+      summary: ['If you\'ve got 5 minutes to spare, below is my version of a CV and cover letter. It briefly covers my skils and mindsets and touches on me as a person.',
+        'In a nutshell, I am looking for a role where I can use my top-notch problem-solving, project management and data analysis skills.',
+        <span key="bold-text"> If you need someone like that, <strong>read on!</strong></span>
+      ],
       bullets: [],
       visible: false
     },
@@ -62,7 +65,7 @@ export default function HomePage() {
         
         console.log('Setting cardsVisible to true');
         setCardsVisible(true);
-      }, 3000); // Adjust this timing as needed
+      }, 2200); // Adjust this timing as needed
     }, 1000); // Adjust time to match the desired duration for the profile image movement
 
     return () => clearTimeout(timer); // Cleanup timer

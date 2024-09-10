@@ -3,13 +3,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #030452;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
+    margin: 20px auto;
     background-color: #ffffff;
-    width: 500px; /* Specify width */
-    height: 200px; /* Specify height */
+    width: 95%;
+    max-width: 600px; /* Specify width */
     opacity: 1;
   }
 
@@ -17,11 +17,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 0;
-    width: 500px; /* Specify width */
-    height: 200px; /* Specify height */
+    padding: 5px;
+    margin-bottom: -10px !important;
+    margin-top: -5px !important;
+    /* border-radius: px; */
+    margin: 20px auto;
+    width: 95%;
+    max-width: 600px; /* Specify width */
     opacity: 1;
     /* below for debugging */
     /* background-color: #000000; */

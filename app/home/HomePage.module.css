@@ -1,3 +1,4 @@
+
 /* Container for the whole page */
 .container {
     display: flex;
@@ -46,7 +47,7 @@
     font-size: 60px;
     color: #ffffff;
     opacity: 0; /* Start as invisible */
-    animation: fadeInOut 4s forwards ease-in-out 0.5s; /* Fades in after the image */
+    animation: fadeInOut 3s forwards ease-in-out 0.5s; /* Fades in after the image */
   }
   
 
