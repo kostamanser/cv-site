@@ -38,7 +38,8 @@ const Card = ({ title, summary, bullets, visible }) => {
         <ul className={styles.bullets}>
           {bullets.map((bullet, index) => (
             <li key={index} className={styles.bulletItem}>
-              <span onClick={() => handleBulletToggle(index)} className={styles.bullet}>
+              <span onClick={() => handleBulletToggle(index)} 
+               className={`${styles.bullet} ${visibleBullets[index] ? styles.rotatedBullet : ''}`}>
                 {bullet.text}
               </span>
               <motion.div
@@ -60,7 +61,7 @@ const Card = ({ title, summary, bullets, visible }) => {
           onClick={handleExpandAll}
           
         >
-          <span className={styles.buttonText}>{expandAll ? 'Less' : 'Expand'}</span>
+          <span className={styles.buttonText}>{expandAll ? 'Collapse all' : 'Expand all'}</span>
           {/* Optionally, add text or just rely on the image in the button */}
         </button>
       )}

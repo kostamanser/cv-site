@@ -9,7 +9,7 @@
     margin: 20px auto;
     background-color: #ffffff;
     width: 95%;
-    max-width: 600px; /* Specify width */
+    max-width: 900px; /* Specify width */
     opacity: 1;
   }
 
@@ -23,7 +23,7 @@
     /* border-radius: px; */
     margin: 20px auto;
     width: 95%;
-    max-width: 600px; /* Specify width */
+    max-width: 900px; /* Specify width */
     opacity: 1;
     /* below for debugging */
     /* background-color: #000000; */
@@ -58,25 +58,27 @@
   display: inline-block;
 }
 
-/* Rotate the custom bullet when rotatedBullet class is applied */
+/* Rotate the custom bullet when rotatedBullet class is a pplied */
 .rotatedBullet::before {
   transform: rotate(90deg); /* Rotate the custom bullet */
+  transition: transform 0.3s ease; /* Smooth rotation */
 }
 
 
   .bullet {
     position: relative;
+    vertical-align: middle; /* Aligns the bullet with the text */
     padding-left: 30px;
     margin-bottom: 0px;
-    display: inline-block;
-    transition: transform 0.3s ease; /* Smooth rotation */
+    display: inline-block;    
   }
 
   .bullet::before {
     content: '';
     position: absolute;
     left: 0;
-    margin-top: 2px;
+    margin-top: 9px;
+    transition: transform 0.3s ease;
     width: 18px;
     height: 18px;
     background-image: url('/assets/BW-bullet-arrow.svg'); /* Custom bullet */
@@ -121,11 +123,11 @@
 .moreButton, .lessButton {
   position: absolute; /* Absolutely position the button */
   bottom: 0px; /* Adjust this value to control vertical spacing */
-  right: 9px; 
+  right: 20px; 
   background-size: contain;
   background-repeat: no-repeat;
   border: none;
-  width: 85px;
+  width: 110px;
   height: 40px;
   cursor: pointer;
 }
@@ -147,7 +149,7 @@
 .buttonText {
   font-size: 12px; /* Set the font size */
   color: rgb(29, 29, 29); /* Set the text color */
-  margin-left: 30px; /* Add space between the icon and the text */
+  margin-left: 40px; /* Add space between the icon and the text */
 }
 
 @keyframes slowPulse {

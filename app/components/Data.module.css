@@ -1,0 +1,23 @@
+
+/* Data.module.css */
+.customLink {
+    position: relative;
+    color: rgb(0, 26, 255);
+    text-decoration: none;
+  }
+  
+  .customLink:hover {
+    color: rgb(0, 225, 255); /* Change color on hover */
+  }
+
+  .customBullets {
+    list-style-type: square;  /* This changes the bullet style to squares */
+    margin-left: 20px;        /* Indent the list */
+    color: #2c3e50;           /* Set bullet point color */
+  }
+  
+  .customBullets li {
+    font-size: 1.2em;         /* Increase font size */
+    line-height: 1.4;         /* Add space between items */
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+  }
