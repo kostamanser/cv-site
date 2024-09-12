@@ -1,4 +1,5 @@
 // Data.js
+/* eslint-disable react/no-unescaped-entities */
 import styles from './Data.module.css'; // Import your CSS module
 import Link from 'next/link';
 
@@ -17,7 +18,8 @@ const cardData = [
     {
         title: <span STYLE="font-size:30px">Why me?</span>,
         summary: [<span key="bold-text"> I was recently awarded a PhD in electric ecology which may not seem relevant to your industry, but it imbued me with
-            <strong> grit</strong>, a <strong>get-up-and-go attitude,</strong> and a <strong>rigorous</strong> and <strong>methodical</strong> method for solving problems.</span>, <span>
+            <strong> grit</strong>, a <strong>get-up-and-go attitude,</strong> and a <strong>rigorous</strong> and <strong>methodical</strong> method for solving problems.</span>, 
+            <span key="bold-text">
             Not to mention a pantheon of useful <strong>technical skills</strong>.</span>,
         <span key="bold-text"><strong>You won't find better in anybody else.</strong></span>
         ],
