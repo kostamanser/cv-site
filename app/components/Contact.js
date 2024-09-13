@@ -3,6 +3,7 @@
 import React from 'react';
 import styles from './Contact.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 const Contact = () => {
@@ -17,46 +18,44 @@ const Contact = () => {
                 />
             </div>
             <div className={styles.contactDetails}>
-
                 <span className={styles.container}>
                     <Image
                         src="/assets/Phone_icon.svg"
-                        alt="Profile"
+                        alt="Phone Icon"
                         width={25}
                         height={25}
                         className={styles.icon}
                     />
-                    <p>Phone: <a href="tel:+44798697472">+44 798 697 472</a></p>
+                    <p><a href="tel:+44798697472">+44 798 697 472</a></p>
                 </span>
-                <span className={styles.container}>
-                    <Image
-                        src="/assets/Gmail_icon.svg"
-                        alt="Profile"
-                        width={25}
-                        height={25}
-                        className={styles.icon}
-                    />
-                    <p>Email: <a href="mailto:kostamanser@gmail.com">kostamanser@gmail.com</a></p>
-                </span>
-                <span className={styles.container}>
-                    <Image
-                        src="/assets/Github_icon.svg"
-                        alt="Profile"
-                        width={25}
-                        height={25}
-                        className={styles.icon}
-                    />
-                    <p>GitHub: <a href="https://github.com/kostamanser" target="_blank" rel="noopener noreferrer">https://github.com/kostamanser</a></p>
-                </span>
-                <span className={styles.container}>
-                    <Image
-                        src="/assets/LinkedIn_icon.svg"
-                        alt="Profile"
-                        width={25}
-                        height={25}
-                        className={styles.icon}
-                    />
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/kosta-manser" target="_blank" rel="noopener noreferrer">linkedin.com/in/kosta-manser</a></p>
+                <span className={styles.container}>   
+                    <Link href="https://github.com/kostamanser">
+                        <Image
+                            src="/assets/Github_icon.svg"
+                            alt="GitHub"
+                            width={50}
+                            height={50}
+                            className={styles.icon}
+                        />
+                    </Link>
+                    <Link href="mailto:kostamanser@gmail.com">
+                        <Image
+                            src="/assets/Gmail_icon.svg"
+                            alt="Email"
+                            width={50}
+                            height={50}
+                            className={styles.icon}
+                        />
+                    </Link>
+                    <Link href="https://www.linkedin.com/in/kosta-manser">
+                        <Image
+                            src="/assets/LinkedIn_icon.svg"
+                            alt="LinkedIn"
+                            width={50}
+                            height={50}
+                            className={styles.icon}
+                        />
+                    </Link>
                 </span>
             </div>
         </div>

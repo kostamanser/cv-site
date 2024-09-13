@@ -1,5 +1,7 @@
 .contactContainer {
     display: flex;
+    flex-direction: column;
+
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -9,7 +11,8 @@
     margin: 20px auto;
     background-color: #ffffff;
     width: 95%;
-    max-width: 900px;
+    min-width:350px;
+    /* max-width: 900px; */
     margin-bottom: 160px; 
 }
 

@@ -16,7 +16,7 @@ const cardData = [
         visible: false
     },
     {
-        title: <span STYLE="font-size:30px">Why me?</span>,
+        title: <span style={{fontSize:'30px'}}>Why me?</span>,
         summary: [<span key="bold-text"> I was recently awarded a PhD in electric ecology which may not seem relevant to your industry, but it imbued me with
             <strong> grit</strong>, a <strong>get-up-and-go attitude,</strong> and a <strong>rigorous</strong> and <strong>methodical</strong> method for solving problems.</span>, 
             <span key="bold-text">
