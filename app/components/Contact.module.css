@@ -8,6 +8,8 @@
     border-radius: 8px;
     box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1);
     margin-bottom: 160px; 
+    width: 95%;
+    max-width: 900px;
 }
 
 
