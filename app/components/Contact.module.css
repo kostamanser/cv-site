@@ -1,0 +1,52 @@
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Light background color */
+    border-radius: 8px;
+    box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1);
+    margin-bottom: 160px; 
+}
+
+
+.profileImageWrapper {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #1b82bd;
+    overflow: hidden;
+}
+
+.contactDetails {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+}
+
+.contactDetails a {
+    color: #004df3;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 1.5rem;
+}
+
+.contactDetails a:hover {
+    color: #005bb5;
+    /* Darker blue on hover */
+}
+
+.contactDetails p {
+    margin: 5px 0;
+    font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    margin-right: 10px; /* Adds space between the icon and text */
+}

@@ -8,6 +8,7 @@ import Image from 'next/image';
 const images = {
     set_up_close: '/images/set_up_close.png',  
     r_plot_example: '/images/R_plot_example.png',    
+    reuben_cube: 'images/Reuben_cube.png'
 };
 
 export default function DynamicImagePage() {

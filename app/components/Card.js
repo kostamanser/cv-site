@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import styles from './Card.module.css';
 
@@ -10,6 +10,17 @@ const Card = ({ title, summary, bullets, visible }) => {
 
   // State to manage whether all bullets are expanded or not
   const [expandAll, setExpandAll] = useState(false);
+
+  // Effect to check if all bullets are manually expanded
+  useEffect(() => {
+    const allExpanded = visibleBullets.every((isVisible) => isVisible);
+    const allCollapsed = visibleBullets.every((isVisible) => !isVisible);
+    if (allExpanded) {
+      setExpandAll(true);
+    } else if (allCollapsed) {
+      setExpandAll(false);
+    }
+  }, [visibleBullets]);
 
   // Toggle individual bullet info
   const handleBulletToggle = (index) => {
@@ -38,8 +49,9 @@ const Card = ({ title, summary, bullets, visible }) => {
         <ul className={styles.bullets}>
           {bullets.map((bullet, index) => (
             <li key={index} className={styles.bulletItem}>
-              <span onClick={() => handleBulletToggle(index)} 
-               className={`${styles.bullet} ${visibleBullets[index] ? styles.rotatedBullet : ''}`}>
+              <span onClick={() => handleBulletToggle(index)}
+                className={`${styles.bullet} ${visibleBullets[index] ? styles.rotatedBullet : ''}`}
+              >
                 {bullet.text}
               </span>
               <motion.div
@@ -56,14 +68,18 @@ const Card = ({ title, summary, bullets, visible }) => {
       </div>
 
       {bullets.length > 0 && (
-        <button
-          className={expandAll ? styles.lessButton : styles.moreButton}
-          onClick={handleExpandAll}
-          
-        >
+        <>
+        <div className={styles.buttonContainer}>
+          <button
+            className={expandAll ? styles.lessButton : styles.moreButton}
+            onClick={handleExpandAll}
+          />
           <span className={styles.buttonText}>{expandAll ? 'Collapse all' : 'Expand all'}</span>
-          {/* Optionally, add text or just rely on the image in the button */}
-        </button>
+        </div>
+        <div className={styles.bulletHint}>
+            <span>Click bullet to expand</span>
+          </div>
+        </>
       )}
     </div>
   );

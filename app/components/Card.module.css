@@ -1,57 +1,58 @@
 .card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    /* border: 1px solid #030452; */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    background-color: #ffffff;
-    width: 95%;
-    max-width: 900px; /* Specify width */
-    opacity: 1;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  /* border: 1px solid #030452; */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  background-color: #ffffff;
+  width: 95%;
+  max-width: 900px;
+  /* Specify width */
+  opacity: 1;
+}
 
-  .invisiCard {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-    margin-bottom: -10px !important;
-    margin-top: -5px !important;
-    /* border-radius: px; */
-    margin: 20px auto;
-    width: 95%;
-    max-width: 900px; /* Specify width */
-    opacity: 1;
-    /* below for debugging */
-    /* background-color: #000000; */
-  }
+.invisiCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: -10px !important;
+  margin-top: -5px !important;
+  /* border-radius: px; */
+  margin: 20px auto;
+  width: 95%;
+  max-width: 900px;
+  /* Specify width */
+  opacity: 1;
+  /* below for debugging */
+  /* background-color: #000000; */
+}
 
-  /* Overwrite h3 and p styles inside .invisiCard */
+/* Overwrite h3 and p styles inside .invisiCard */
 .invisiCard h3 {
-    color: #fff; 
-    font-size: 60px; 
-    margin-bottom: 0px;
-    margin-top:
-  }
-  
-  .invisiCard p {
-    color: #fff; 
-    font-size: 20px; 
-      }
+  color: #fff;
+  font-size: 60px;
+  margin-bottom: 0px;
+}
+
+.invisiCard p {
+  color: #fff;
+  font-size: 20px;
+}
 
 
-  .content {
-    flex: 1;
-    margin-right: 20px;
-  }
-  
-  .bullets {
-    list-style-type: none;
-    padding: 0;
-  }
+.content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.bullets {
+  list-style-type: none;
+  padding: 0;
+}
 
 /* Bullet text styling */
 .bulletText {
@@ -60,52 +61,68 @@
 
 /* Rotate the custom bullet when rotatedBullet class is a pplied */
 .rotatedBullet::before {
-  transform: rotate(90deg); /* Rotate the custom bullet */
-  transition: transform 0.3s ease; /* Smooth rotation */
+  transform: rotate(90deg);
+  /* Rotate the custom bullet */
+  transition: transform 0.3s ease;
+  /* Smooth rotation */
 }
 
 
-  .bullet {
-    position: relative;
-    vertical-align: middle; /* Aligns the bullet with the text */
-    padding-left: 30px;
-    margin-bottom: 0px;
-    display: inline-block;    
-  }
+.bullet {
+  position: relative;
+  vertical-align: middle;
+  /* Aligns the bullet with the text */
+  padding-left: 30px;
+  margin-bottom: 0px;
+  display: inline-block;
+}
 
-  .bullet::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    margin-top: 9px;
-    transition: transform 0.3s ease;
-    width: 18px;
-    height: 18px;
-    background-image: url('/assets/BW-bullet-arrow.svg'); /* Custom bullet */
-    background-size: cover;
-  }
-  
-  .moreButton {
-    background-image: url('/assets/Retracted.svg'); /* Custom button */
-    background-size: contain;
-    background-repeat: no-repeat;
-    border: none;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-  }
+.bullet::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  margin-top: 3px;
+  transition: transform 0.3s ease;
+  width: 18px;
+  height: 18px;
+  background-image: url('/assets/BW-bullet-arrow.svg');
+  /* Custom bullet */
+  background-size: cover;
+}
 
-  .lessButton {
-    background-image: url('/assets/Expanded.svg'); /* Custom button */
-    background-size: contain;
-    background-repeat: no-repeat;
-    border: none;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-  }
+.buttonContainer {
+  position: absolute;
+  bottom: 5px;
+  /* Adjust this value to control vertical spacing */
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  /* Stack the button and text vertically */
+  align-items: center;
+  /* Center the items */
+}
 
-  /* Style for the additional information */
+.moreButton {
+  background-image: url('/assets/Retracted.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.lessButton {
+  background-image: url('/assets/Expanded.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Style for the additional information */
 .moreInfo {
   padding: 5px;
   margin-top: 5px;
@@ -113,22 +130,22 @@
   color: #555;
   border-left: 2px solid #ddd;
 }
-  
+
 
 /* Positioning the button in the top right corner of the card */
-.card, .invisiCard {
-  position: relative; /* Make the card a positioned element */
+.card,
+.invisiCard {
+  position: relative;
+  /* Make the card a positioned element */
 }
 
-.moreButton, .lessButton {
-  position: absolute; /* Absolutely position the button */
-  bottom: 0px; /* Adjust this value to control vertical spacing */
-  right: 20px; 
+
+
+.moreButton,
+.lessButton {
   background-size: contain;
   background-repeat: no-repeat;
   border: none;
-  width: 110px;
-  height: 40px;
   cursor: pointer;
 }
 
@@ -138,32 +155,43 @@
   font-size: 14px;
   color: #555;
 }
-      
+
 .buttonLabel {
-  padding: 1px;
-  margin-top: 1px;
+  /* padding: 1px; */
   font-size: 14px;
   color: #ff0000;
 }
 
 .buttonText {
-  font-size: 12px; /* Set the font size */
-  color: rgb(29, 29, 29); /* Set the text color */
-  margin-left: 40px; /* Add space between the icon and the text */
+  font-size: 12px;
+  color: #000;
+}
+
+.bulletHint {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 12px;
+  color: #666;
 }
 
 @keyframes slowPulse {
   0% {
     transform: scale(1);
   }
+
   50% {
-    transform: scale(1.05); /* Slightly increase the size */
+    transform: scale(1.05);
+    /* Slightly increase the size */
   }
+
   100% {
     transform: scale(1);
   }
 }
 
-.moreButton:hover, .lessButton:hover {
-  animation: slowPulse 1.5s infinite ease-in-out; /* Adjust the speed (1.5s) */
+.moreButton:hover,
+.lessButton:hover {
+  animation: slowPulse 1.5s infinite ease-in-out;
+  /* Adjust the speed (1.5s) */
 }

@@ -32,9 +32,10 @@ const cardData = [
         summary: 'Here is a quick summary of the key skills I have picked up, technical and otherwise.',
         bullets: [
             {
-                text: <span><strong>Data analysis (R, Matlab, Python) </strong></span>,
+                text: <span><strong>Data analysis (R, Matlab, Python). </strong></span>,
                 moreInfo: (
                     <ul className={styles.customBullets}>
+                        <li>I am excellent at pulling insights out of datasets. I pride myself in being able to find trends hidden to most others.</li>
                         <li>R: I use this for statistical tests and complex modelling including linear mixed models (LMMs, GLMs). It's also good for plotting using <code>ggplot2</code> (<Link href="/images/R_plot_example.png" target="_blank" className={styles.customLink}>see here</Link>). </li>
                         <li>MATLAB: I use this for large matrix analysis, bespoke signal analysis and to analyse some other odd datatypes that you only really find in MATLAB.</li>
                         <li>Python: I use this for anything the other two can't do. I have experience with <code>pandas</code> and <code>matplotlib</code> among others.</li>
@@ -42,38 +43,33 @@ const cardData = [
                 )
             },
             {
-                text: <span><strong>Software development (Python, Javascript, CSS, Matlab, HTML)</strong></span>,
+                text: <span><strong>Software development (Python, Javascript, CSS, Matlab, HTML).</strong></span>,
                 moreInfo: (
                     <ul className={styles.customBullets}>
-                        <li>Python: I am building an webapp for storing photos at the moment using a Flask backend coded in python. I also built a little electric signal recorder using a raspberry pi, an LED and some buttons which was controlled using a piece of python software i wrote. </li>
+                        <li>This is something I have been focusing on since finishing my PhD. I think I have a talent for it.</li>
+                        <li>Python: I am building an webapp for storing photos at the moment using a Flask backend coded in python. I also built a little electric signal recorder using a raspberry pi which was controlled using a piece of python software I wrote. </li>
                         <li>MATLAB: I wrote a couple of little applications which would collect and plot data for some Master's students I was mentoring.</li>
                         <li>Javascript, CSS, HTML: Currently learning this to build things like this website!</li>
                     </ul>
                 )
             },
             {
-                text: <span><strong>Project management</strong></span>,
+                text: <span><strong>Project management.</strong></span>,
                 moreInfo: (
                     <ul className={styles.customBullets}>
-                        <li></li>
+                        <li>I independently managed all aspects of my thesis research, from budgeting and data collection to analysis and report writing, which required strong project management skills and self-reliance.</li>
+                        <li>I'm adaptable and can get a project back on track: I suffered loss of equipment and drought conditions on fieldwork, but by utilising a pre-prepared contingency kit (plan for every scenario!), I was able to successfully complete the project objectives despite adverse conditions.</li>
+                        <li>I strategically planned and executed fieldwork across multiple seasons, ensuring optimal timing for data collection while effectively managing time and resources for a four-year research project within an £11k budget.</li>
                     </ul>
                 )
             },
             {
-                text: <span><strong>Leadership</strong></span>,
+                text: <span><strong>Leadership.</strong></span>,
                 moreInfo: (
                     <ul className={styles.customBullets}>
-                        <li></li>
-                    </ul>
-                )
-            },
-            {
-                text: <span><strong>Research</strong></span>,
-                moreInfo: (
-                    <ul className={styles.customBullets}>
-                        <li>I established a new field of study, demonstrating I have a strong ability to integrate diverse, tangentially related information. </li>
-                        <li>I am adept at interpreting data and trends and using those to inform my decisions.</li>
-                        <li>I have done the research for several projects.</li>
+                        <li>I’ve mentored students, both formally and informally, guiding them through their research and development, and ensuring they gained the skills and confidence needed to succeed in their projects. I even built some tools to smooth their research process.</li>
+                        <li>I led the Entomology Society for two years, organising events and managing activities despite the seasonal challenges (insects are about over the summer when students are on holiday), demonstrating leadership in the face of difficulties and keeping the society active and engaged.</li>
+                        <li>While conducting my independent research, I took ownership of the entire process—from budgeting to fieldwork and reporting—making key decisions and driving the project forward, showcasing strong leadership and project management skills.</li>
                     </ul>
                 )
             }
@@ -82,7 +78,7 @@ const cardData = [
     },
     {
         title: 'Relevant mindsets',
-        summary: 'Here are a few relevant mindsets I have learned over the course of my PhD and various side-hustles which I think are critical for success.',
+        summary: 'Here are a few relevant mindsets I have learned over the course of my PhD which I think are critical for success.',
         bullets: [
             {
                 text: <span><strong>Anything can be learned.</strong> There are times when I didn't have the skills needed for a task. So I learned them.</span>,
@@ -116,36 +112,62 @@ const cardData = [
         ],
         visible: true
     },
-
     {
-        title: 'Education',
-        summary: 'A brief overview of my academic background.',
+        title: 'Personal qualities',
+        summary: 'These are my strongest personal qualities',
         bullets: [
             {
-                text: 'PhD in Biology - University of Bristol', moreInfo: ['If you\'ve got 5 minutes to spare, below is my version of a CV and cover letter. It briefly covers my skils and mindsets and touches on me as a person.',
-                    'In a nutshell, I am looking for a role where I can use my top-notch problem-solving, project management and data analysis skills.',
-                    <span key="bold-text"> If you need someone like me, <strong>read on!</strong></span>
-                ]
+                text: <span><strong>Resilience.</strong></span>,
+                moreInfo: (
+                    <ul className={styles.customBullets}>
+                       <li>My PhD was particularly high-risk, and I faced more failures than most. Each setback strengthened my determination, and I continuously found ways to overcome challenges, ultimately driving my research forward to successful outcomes.</li>
+                    </ul>
+                )
             },
-            { text: 'MSci in Biology', moreInfo: 'First class degree. Awarded prize for best final year project after receiving the highest mark that year for my Master\'s thesis' },
+            {
+                text: <span><strong>Problem solving.</strong></span>,
+                moreInfo: (
+                    <ul className={styles.customBullets}>
+                        <li> I thrive on finding innovative solutions, and during my PhD, I developed creative experimental designs that helped overcome logistical and research barriers, allowing me to gather critical data despite constraints.</li>
+                        <li> I'm great at leveraging technologies and other tools to overcome problems. That's how I came to learn <Link href="/images/Reuben_cube.png" target="_blank" className={styles.customLink}>graphical design</Link> and so many coding languages.</li>
+                    </ul>
+                )
+            },
+            {
+                text: <span><strong>Adaptability and flexibility.</strong></span>,
+                moreInfo: (
+                    <ul className={styles.customBullets}>
+                        <li>I excel at wearing many hats and switching between tasks quickly. Whether it’s managing fieldwork, analysing data, or writing reports, I can effortlessly adapt to changing demands and deliver results efficiently across multiple contexts.</li>
+                    </ul>
+                )
+            },
+            {
+                text: <span><strong>Trustworthiness.</strong></span>,
+                moreInfo: (
+                    <ul className={styles.customBullets}>
+                        <li>Peers in my lab often turn to me when they encounter challenges, even since I have left, knowing they can rely on my thoughtful advice and steady guidance to help navigate difficult situations.</li>
+                        <li>My kindness and willingness to go the extra mile mean that others trust me to offer more than just technical expertise - I’m a dependable source of encouragement and practical help.</li>
+                    </ul>
+                )
+            },
         ],
-        visible: true
+        visible: true 
     },
     {
-        title: 'Education',
-        summary: 'A brief overview of my academic background.',
-        bullets: [
-            {
-                text: 'PhD in Biology - University of Bristol', moreInfo: ['If you\'ve got 5 minutes to spare, below is my version of a CV and cover letter. It briefly covers my skils and mindsets and touches on me as a person.',
-                    'In a nutshell, I am looking for a role where I can use my top-notch problem-solving, project management and data analysis skills.',
-                    <span key="bold-text"> If you need someone like me, <strong>read on!</strong></span>
-                ]
-            },
-            { text: 'MSci in Biology', moreInfo: 'First class degree. Awarded prize for best final year project after receiving the highest mark that year for my Master\'s thesis' },
+        title: <span style={{ fontSize: '30px', display: 'block', textAlign: 'center'  }}>Thank you for reading this far!</span>,
+        summary: [
+            <span key="bold-text" style={{ display: 'block', textAlign: 'center' }}>I've covered a lot so far, but there's still much more to share. For instance, I am currently working part time and pro bono for a <strong>pre-funding startup</strong> so I can showcase my <strong>commitment</strong> and gain some valuable <strong>business acumen</strong>.</span>, 
+            <span key="bold-text" style={{ display: 'block', textAlign: 'center' }}>In short, I’m <strong>eager to work</strong> and keen to take on new challenges.</span>,
+            <span key="bold-text" style={{ display: 'block', textAlign: 'center' }}>If you think that I might be good for your team, or you'd like to learn more</span>,
+            <span key="bold-text" style={{ display: 'block', textAlign: 'center', fontSize: '40px' }}><strong>get in touch!</strong></span>
         ],
-        visible: true
+        bullets: [],
+        visible: false
     }
-
 ];
+
+
+
+
 
 export default cardData; 
