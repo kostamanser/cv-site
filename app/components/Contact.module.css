@@ -1,16 +1,19 @@
 .contactContainer {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #f9f9f9;
-    /* Light background color */
-    border-radius: 8px;
-    box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1);
-    margin-bottom: 160px; 
+    /* border: 1px solid #030452; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    background-color: #ffffff;
     width: 95%;
     max-width: 900px;
+    margin-bottom: 160px; 
 }
+
+  
 
 
 .profileImageWrapper {
