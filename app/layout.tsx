@@ -18,6 +18,11 @@ export const metadata: Metadata = {
 description: "A CV site made by Kosta",
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1.0,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{

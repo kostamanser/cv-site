@@ -8,7 +8,7 @@ import Link from 'next/link';
 const cardData = [
     {
         title: 'Hi!',
-        summary: ['If you\'ve got 5 minutes to spare, below is my version of a CV and cover letter. It briefly covers my skils and mindsets and touches on me as a person.',
+        summary: ['Below is my version of a CV and cover letter. It briefly covers my skils and mindsets and touches on me as a person.',
             'In a nutshell, I am looking for a role where I can use my top-notch problem-solving, project management and data analysis skills.',
             <span key="bold-text"> If you need someone like me, <strong>read on!</strong></span>
         ],
