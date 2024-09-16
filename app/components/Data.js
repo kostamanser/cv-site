@@ -8,7 +8,7 @@ import Link from 'next/link';
 const cardData = [
     {
         title: 'Hi!',
-        summary: ['Below is my version of a CV and cover letter. It briefly covers my skils and mindsets and touches on me as a person.',
+        summary: ['Below is my version of a CV and cover letter. It briefly covers my skills and mindsets and touches on me as a person.',
             'In a nutshell, I am looking for a role where I can use my top-notch problem-solving, project management and data analysis skills.',
             <span key="bold-text"> If you need someone like me, <strong>read on!</strong></span>
         ],
@@ -47,7 +47,7 @@ const cardData = [
                 moreInfo: (
                     <ul className={styles.customBullets}>
                         <li>This is something I have been focusing on since finishing my PhD. I think I have a talent for it.</li>
-                        <li>Python: I am building an webapp for storing photos at the moment using a Flask backend coded in python. I also built a little electric signal recorder using a raspberry pi which was controlled using a piece of python software I wrote. </li>
+                        <li>Python: I am building an webapp for storing photos at the moment using a Flask backend coded in python. I also built a small electric signal recorder using a Raspberry Pi, which was controlled using a piece of Python software I wrote. </li>
                         <li>MATLAB: I wrote a couple of little applications which would collect and plot data for some Master's students I was mentoring.</li>
                         <li>Javascript, CSS, HTML: Currently learning this to build things like this website!</li>
                     </ul>
@@ -84,14 +84,14 @@ const cardData = [
                 text: <span><strong>Anything can be learned.</strong> There are times when I didn't have the skills needed for a task. So I learned them.</span>,
                 moreInfo: (
                     <ul className={styles.customBullets}>
-                        <li>This website is custom-built from scratch. It uses CSS, JavaScript, HTML and a handful of other technologies I learned to make this website. You can see the result youself.</li>
+                        <li>This website is custom-built from scratch. It uses CSS, JavaScript, HTML and a handful of other technologies I learned to make this website. You can see the result yourself.</li>
                         <li>Two months before the end of my PhD I realised that I needed much more complicated analysis for my data. So I used chatGPT to teach me how to do Linear Mixed Models and other complicated statistical techniques. This ended up being a tentpole of my PhD thesis.</li>
                         <li>I wanted to make a 3D model of my setup. I had no experience in 3D modelling, so I learned how to use a basic computer-aided design (CAD) program. You can see the result <Link href="/images/Set_up_full.png" target="_blank" className={styles.customLink}>here</Link>. </li>
                     </ul>
                 )
             },
             {
-                text: <span><strong>Don't fear failure.</strong> If you never fail, you're not trying hard enough. There have been times nothing has being going right for me, but I have learned that you can always pick yourself up and find the opportunities within a bad situation.</span>,
+                text: <span><strong>Don't fear failure.</strong> If you never fail, you're not trying hard enough. There have been times nothing has been going right for me, but I have learned that you can always pick yourself up and find the opportunities within a bad situation.</span>,
                 moreInfo: (
                     <ul className={styles.customBullets}>
                         <li>In my PhD I set out to discover a new sense (<a href="https://simple.wikipedia.org/wiki/Electroreception" target="_blank" rel="noopener noreferrer" className={styles.customLink}>electroreception</a>) in crustaceans. It took me three years of finding absolutely nothing across a whole host of species before I got my first positive result - that's when some people finish data collection. I finally made a discovery and I'm glad I stuck with it. </li>
@@ -104,7 +104,7 @@ const cardData = [
                 moreInfo: (
                     <ul className={styles.customBullets}>
                         <li>I am publishing an article with an American collaborator. The article is set to be a hit, but my collaborator is not a subject-matter expert as I am. It took a deft hand to persuade him to work harder and aim higher. The result: we are submitting to a top-tier journal rather than a mid-tier, even if it takes a little longer. </li>
-                        <li>My relationship with my supervisor was falling apart. Before it could, I took proactive steps to make things right. We had a hard, honest conversation and realigned our expectations of one another. After that conversation, our relationship was much more productive than it had been before. </li>
+                        <li>When my relationship with my supervisor began to falter, I took proactive steps to address it. Before it could, I took proactive steps to make things right. We had a hard, honest conversation and realigned our expectations of one another. After that conversation, our relationship was much more productive than it had been before. </li>
                         <li>Communication is also explaining complex ideas in a digestible way! I have experience in presenting my work at scientific conferences, in lab meetings and even pre-school children who have come across my field equipment. </li>
                     </ul>
                 )
