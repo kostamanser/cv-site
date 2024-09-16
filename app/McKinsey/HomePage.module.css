@@ -1,0 +1,95 @@
+
+/* Container for the whole page */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: flex-start;
+    position: relative;
+    padding-top: 120px; /* For space when the image moves up */
+    z-index: 2;
+  }
+  
+  /* Introduction section: initially in the middle of the screen */
+  .introSection {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    transition: transform 1s ease-in-out; /* Move image up smoothly */
+    transition-delay: 2s;
+    z-index: 3;
+  }
+  
+  .moveUp {
+    transform: translateY(-110px); /* Moves the image up 150px */
+  }
+  
+  .profileImageWrapper {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    border: 5px solid #fff; /* Change color as needed */
+    overflow: hidden; /* Ensures the image fits inside the circle */
+  }
+  
+  .profileImageWrapper img {
+    object-fit: cover; /* Ensures the image fills the circle nicely */
+    width: 100%;
+    height: 100%;
+  }
+  
+  .greeting {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 60px;
+    color: #ffffff;
+    opacity: 0; /* Start as invisible */
+    animation: fadeInOut 3s forwards ease-in-out 0.5s; /* Fades in after the image */
+  }
+  
+
+
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    15% {
+      opacity: 1;
+    }
+    85% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* Cards Section: initially hidden */
+  .cardsSection {
+    display: flex;
+    flex-direction: column;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+  }
+  
+  .cardsVisible {
+    opacity: 1;
+  }
+
+.cardsWrapper {
+  display: flex;
+  flex-direction: column;
+}
+  
+    /* Animation for fading in elements */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
